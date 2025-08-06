@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class sample{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        
+        String a = scan.next();
+         System.out.println("Name:"+a);
+        String b = scan.nextLine();
+         System.out.println("Department:"+b);
+        String c = scan.nextLine();
+         System.out.println(" email:"+c);
+        String d = scan.nextLine();
+         System.out.println(" grade:"+d);
+    }
+}
