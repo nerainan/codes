@@ -1,0 +1,41 @@
+
+package com.java;
+
+import java.util.Scanner;
+
+public class Mark {
+
+	public static void main(String[]args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the DSP mark");
+		int a=scan.nextInt();
+		System.out.println("Enter the LIC mark");
+		int b=scan.nextInt();
+		System.out.println("Enter the EMF mark");
+		int c=scan.nextInt();
+		System.out.println("Enter the NS mark");
+		int d=scan.nextInt();
+		System.out.println("Enter the CS mark");
+		int e=scan.nextInt();
+		
+		int totalObtained = a+b+c+d+e;
+	    int totalPossible = 100 * 5;
+		
+		System.out.println("Choose operation:\n'p' - Print Total and Percentage");
+		char choice=scan.next().charAt(0);
+		
+		switch(choice) {
+		case 'p':
+            double percentage = (totalObtained * 100.0) / totalPossible;
+            System.out.println("Total Marks Obtained: " + totalObtained);
+            System.out.printf("Percentage: %.2f%%\n", percentage);
+            break;
+
+        default:
+            System.out.println("Invalid input");
+		}
+		
+		scan.close();
+		}
+
+}
