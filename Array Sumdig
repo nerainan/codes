@@ -1,0 +1,26 @@
+
+public class Array {
+
+    public static void main(String[] args) {
+        int[] arr1 = {155, 435, 876, 123, 546};
+        int[] sumdig = new int[arr1.length];
+        for (int i = 0; i < arr1.length; i++) {
+            int num = arr1[i];
+            int sum = 0;
+            
+            
+            while (num > 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+
+            sumdig[i] = sum;  
+        }
+
+       
+        for (int sum : sumdig) {
+            System.out.println(sum);
+           
+        }
+    }
+}
