@@ -1,0 +1,21 @@
+public class ArrayString {
+    public static void main(String[] args) {
+       String [] [] arr= { {"cat","dog","pig","rat"},
+                         {"sun","hat","run","cup"},
+                         {"car","hen","fan","box"},
+                         {"bat","map","top","sathya"}
+                       };  
+       int count = 1;
+      for( int i=0; i<arr.length; i++){
+           for( int j=0; j<arr.length; j++){
+         
+            System.out.println(count + "." + arr[i][j]);     
+              count++;  
+           }
+           
+      
+      }
+      
+     }
+      
+ }
