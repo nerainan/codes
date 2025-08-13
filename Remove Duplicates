@@ -1,0 +1,13 @@
+
+public class Duplicates {
+public static void main(String[] args) {
+
+   int[] arr = {11, 43, 67, 45, 23, 11, 67, 45};
+   LinkedHashSet<Integer> set = new LinkedHashSet<>();
+   for (int num : arr) {
+   set.add(num);
+    }
+   System.out.println(set);
+}
+
+}
