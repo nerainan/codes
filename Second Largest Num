@@ -1,0 +1,10 @@
+
+
+public class WAPLargestNum {
+public static void main(String[] args) {
+
+int[] arr = {23, 54, 67, 54, 87, 98, 23, 1};
+     Arrays.sort(arr);
+     System.out.println("Second largest element: " + arr[arr.length - 2]);
+ }
+}
