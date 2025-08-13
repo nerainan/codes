@@ -1,0 +1,17 @@
+
+public class UpperCaseLowerCase{
+    public static void main(String[] args) {
+        String a ="java A";
+        for(int i=0; i<a.length(); i++){
+            char d=a.charAt(i);
+            if(Character.isUpperCase(d)){
+                System.out.println(d+ " UpperCase :"+ (int)d);
+            }
+            else if (Character.isLowerCase(d)){
+                 System.out.println(d+ " LowerCase :" +(int)d);
+        }
+        
+        }  
+       
+    }
+}
